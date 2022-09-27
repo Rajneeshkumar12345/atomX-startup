@@ -13,47 +13,57 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">AtomX Tech</a>
+          Welcome to <a >AtomX Tech</a>
         </h1>
 
 
         <p className={styles.description}>
         Delivering affordable tech for early stage startups
-          {/* <code className={styles.code}>pages/index.js</code> */}
         </p>
 
         <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
+          <a href="/about" className={styles.card}>
+            <h2>About us &rarr;</h2>
+            <p>Data shows that almost 80% of the entrepreneurs are not able to launch their 1st version of the idea.</p>
+            <br></br>
+            <p>Read more ...</p>
+           </a>
 
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h2>Learn &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className={styles.card}
-          >
-            <h2>Examples &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
+          <a href="/services" className={styles.card} style={{height:"270px"}}>
+            <h2>Our Services &rarr;</h2>
+            <p>We provide almost all the services that will launch your next big thing.</p>
+            <br></br>
+        
+            <p >Read more ...</p>
           </a>
 
           <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+            href="/portfolio"
             className={styles.card}
           >
-            <h2>Deploy &rarr;</h2>
+            <h2>Out Portfolio &rarr;</h2>
+            <p>We have helped many early stage entrepreneurs to launch their idea. 
+               Click here to find some of out works .</p>
+               <br></br>
+               <p>Read more ...</p>
+          </a>
+
+          <a
+            href="https://forms.gle/KtNVJm16mHx8bZSh7"
+            className={styles.card} style={{height:"270px"}}
+          >
+            <h2>Contact us &rarr;</h2>
             <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
+            Have an idea but don’t know how to start due to budget issue ?
+           
             </p>
+            <br></br>
+            <p> Submit your requirement</p>
           </a>
         </div>
       </main>
 
-      <footer className={styles.footer}>
+      {/* <footer className={styles.footer}>
         <a
           href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
           target="_blank"
@@ -64,7 +74,7 @@ export default function Home() {
             <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
           </span>
         </a>
-      </footer>
+      </footer> */}
     </div>
   )
 }
